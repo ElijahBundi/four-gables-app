@@ -11,15 +11,18 @@ function Home() {
   useEffect(() => {
     fetch('http://localhost:8004/houseData')
     .then(res => res.json())
-    .then(homes => setHomes(homes))
+    .then(homeData => setHomes(homeData))
   }, [])
 
-  
+  function deleteHome(id) {
+    const updatedHomes = homes.filter((home) => home.id === id)
+    setHomes(updatedHomes)
+  }
 
   return (
     <>
         <Homepage />
-        <Cards homes={homes}/>
+        <Cards homes={homes} onDelete={deleteHome} />
         <Footer />
     </>
   )

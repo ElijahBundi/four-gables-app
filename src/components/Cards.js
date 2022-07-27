@@ -2,7 +2,10 @@ import React from 'react';
 import CardItem from './CardItem';
 import './Cards.css'
 
-function Cards({ homes }) {
+function Cards({ homes, onDelete }) {
+
+    
+
   return (
     <div className='cards'>
         <h1>...Check out these epic homes...</h1>
@@ -11,7 +14,7 @@ function Cards({ homes }) {
                 <ul className='cards-item'>
                     {homes.map((home) => {
                         return (
-                            <CardItem key={home.id} home={home} />
+                            <CardItem key={home.id} home={home} onDelete={onDelete}/>
                         )
                     })}
                 </ul>                         

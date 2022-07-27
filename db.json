@@ -1,18 +1,6 @@
 {
   "houseData": [
     {
-      "id": 1,
-      "firstName": "John",
-      "secondName": "Newton",
-      "email": "johnnewton@gmail.com",
-      "country": "Tanzania",
-      "password": "12345",
-      "imgUrl": "./images/img-8.jpg",
-      "label": ".Feel the Nature",
-      "path": "./Services",
-      "description": "Explore the cosy atmosphere at the foot of Ngong Hills."
-    },
-    {
       "id": 2,
       "firstName": "Baraza",
       "secondName": "Okwetu",
@@ -70,6 +58,28 @@
       "label": "ugali",
       "description": "elijah",
       "id": 6
+    },
+    {
+      "firstName": "ugali",
+      "lastName": "elijah",
+      "email": "kimsfelo@gmail.com",
+      "country": "Andorra",
+      "password": "retdsgfweavd",
+      "imageUrl": "https://www.pexels.com/photo/modern-furniture-and-big-mirror-in-bedroom-6315800/",
+      "label": "elijah",
+      "description": "kales",
+      "id": 7
+    },
+    {
+      "firstName": "ugali",
+      "lastName": "elijah",
+      "email": "kimsfelo@gmail.com",
+      "country": "Algeria",
+      "password": "xgffxhgc",
+      "imageUrl": "elijah",
+      "label": "elijah",
+      "description": "ghjfjh",
+      "id": 9
     }
   ]
 }

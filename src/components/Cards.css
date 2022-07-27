@@ -51,6 +51,25 @@
     padding-top: 67%;
     overflow: hidden;
   }
+
+  .delete-card-item button {    
+    font-size: 18px;
+    width: 100px;
+    cursor: pointer;
+    background-color: rgb(231, 226, 226);
+    color: #242424;
+    border: 1px solid var(--primary);
+     
+  }
+
+  .delete-card-item button:hover {
+    background-color: #242424;
+    border-radius: 5px;
+    color: #fff;
+    padding: 1px 5px;
+    border: 1px solid var(--primary);
+    transition: all 0.1s ease-out; 
+  } 
   
   .fade-img {
     animation-name: fade-img;
