@@ -3,6 +3,7 @@ import '../../App.css';
 import Cards from '../Cards';
 import Footer from '../Footer';
 import Homepage from '../Homepage';
+import Navbar from '../Navbar';
 
 function Home() {
 
@@ -15,12 +16,18 @@ function Home() {
   }, [])
 
   function deleteHome(id) {
-    const updatedHomes = homes.filter((home) => home.id === id)
+    const updatedHomes = homes.filter((home) => home.id !== id)
+    setHomes(updatedHomes)
+  }
+
+  function addHome(newHome) {
+    const updatedHomes = [...homes, newHome]
     setHomes(updatedHomes)
   }
 
   return (
     <>
+        <Navbar onAddHome={addHome}/>
         <Homepage />
         <Cards homes={homes} onDelete={deleteHome} />
         <Footer />

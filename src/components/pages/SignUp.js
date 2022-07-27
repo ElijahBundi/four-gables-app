@@ -5,14 +5,14 @@ import countryList from 'react-select-country-list';
 import '../../App.css';
 import './SignUp.css'
 
-function SignUp() {
+function SignUp({ onAddHome }) {
 
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
   const [country, setCountry] = useState('')
   const [password, setPassword] = useState('')
-  const [imageUrl, setImageUrl] = useState('')
+  const [imgUrl, setImgUrl] = useState('')
   const [label, setLabel] = useState('')
   const [description, setDescription] = useState('')
 
@@ -27,7 +27,7 @@ function SignUp() {
       email: email,
       country: country,
       password: password,
-      imageUrl: imageUrl,
+      imgUrl: imgUrl,
       label: label,
       description: description
     }
@@ -40,7 +40,7 @@ function SignUp() {
       body: JSON.stringify(dataObj)
     })
       .then(res => res.json())
-      .then((newItem => console.log(newItem)))
+      .then((newHome => onAddHome(newHome)))
   }
 
   return (
@@ -73,8 +73,8 @@ function SignUp() {
             type='text' 
             name='name' 
             placeholder='home image url...'
-            value={imageUrl} 
-            onChange={(e) => setImageUrl(e.target.value)}
+            value={imgUrl} 
+            onChange={(e) => setImgUrl(e.target.value)}
           />
           <input 
             type='text' 

@@ -49,37 +49,70 @@
       "description": "When you want a town setting."
     },
     {
-      "firstName": "elijah",
-      "lastName": "elijah",
+      "firstName": "Elijah",
+      "lastName": "Bundi",
       "email": "bundielly@gmail.com",
-      "country": "Åland Islands",
-      "password": "redsgaew",
-      "imageUrl": "./images/img-8.jpg",
-      "label": "ugali",
-      "description": "elijah",
+      "country": "Australia",
+      "password": "wertyuio",
+      "imgUrl": "./images/img-11.jpg",
+      "label": "Beautiful",
+      "description": "A very serene home",
       "id": 6
     },
     {
-      "firstName": "ugali",
-      "lastName": "elijah",
-      "email": "kimsfelo@gmail.com",
-      "country": "Andorra",
-      "password": "retdsgfweavd",
-      "imageUrl": "https://www.pexels.com/photo/modern-furniture-and-big-mirror-in-bedroom-6315800/",
-      "label": "elijah",
-      "description": "kales",
-      "id": 7
+      "firstName": "Brian",
+      "lastName": "Matoke",
+      "email": "elijah.bundi@student.moringaschool.com",
+      "country": "Algeria",
+      "password": "sdfghjkl;",
+      "imgUrl": "./images/img-17.jpg",
+      "label": "soft & calm",
+      "description": "when you want to meditate",
+      "id": 8
     },
     {
-      "firstName": "ugali",
-      "lastName": "elijah",
-      "email": "kimsfelo@gmail.com",
+      "firstName": "Brian",
+      "lastName": "Matoke",
+      "email": "elijah.bundi@student.moringaschool.com",
       "country": "Algeria",
-      "password": "xgffxhgc",
-      "imageUrl": "elijah",
-      "label": "elijah",
-      "description": "ghjfjh",
+      "password": "sdfghjkl;",
+      "imgUrl": "./images/img-10.jpg",
+      "label": "soft & calm",
+      "description": "when you want to meditate",
       "id": 9
+    },
+    {
+      "firstName": "Brian",
+      "lastName": "Matoke",
+      "email": "elijah.bundi@student.moringaschool.com",
+      "country": "Algeria",
+      "password": "sdfghjkl;",
+      "imgUrl": "./images/img-13.jpg",
+      "label": "soft & calm",
+      "description": "when you want to meditate",
+      "id": 10
+    },
+    {
+      "firstName": "Elijah",
+      "lastName": "Elijah",
+      "email": "bundielly@gmail.com",
+      "country": "American Samoa",
+      "password": "sdfghj",
+      "imgUrl": "./images/img-16.jpg",
+      "label": "okay",
+      "description": "very beautiful",
+      "id": 11
+    },
+    {
+      "firstName": "Elijah",
+      "lastName": "Elijah",
+      "email": "bundielly@gmail.com",
+      "country": "Albania",
+      "password": "sdfghjkl",
+      "imgUrl": "./images/img-12.jpg",
+      "label": "superb",
+      "description": "nothing to be added",
+      "id": 13
     }
   ]
 }
