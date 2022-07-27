@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Button.css';
 import './Footer.css';
 
 function Footer() {
@@ -15,7 +16,7 @@ function Footer() {
             <div className='input-areas'>
                 <form>
                     <input type='email' name='email' placeholder='Your Email' />
-                    {/* <Button buttonStyle='btn--outline'>Subscribe</Button> */}
+                    <button className='btn--outline'>Subscribe</button>
                 </form>
             </div>
         </section>
@@ -58,7 +59,7 @@ function Footer() {
             <div className='social-media-wrap'>
                 <div className='footer-logo'>
                     <Link to='/' className='social-logo'>
-                        Fo-Gab <i className='fab fa-typo3'></i>
+                        Fo-Gab <i className='fab fa-accusoft'></i>
                     </Link>
                 </div>
                 <small className='website-rights'>Fo-Gab © 2022</small>
@@ -89,7 +90,7 @@ function Footer() {
                     </Link>
                     <Link 
                         className='social-icon-link linkedin'
-                        to='/'
+                        to='https://www.facebook.com/elly.boondox'
                         target='_blank'
                         aria-label='LinkedIn'
                     >

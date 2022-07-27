@@ -8,8 +8,7 @@
   .home,
   .services,
   .contact-us,
-  .about,
-  .sign-up {
+  .about {
     display: flex;
     height: 90vh;
     align-items: center;
@@ -45,8 +44,9 @@
   }
   
   .sign-up {
-    background-image: url('/public/images/img-8.jpg');
+    background-image: url('/public/images/img-1.jpg');
     background-position: center;
+    text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;

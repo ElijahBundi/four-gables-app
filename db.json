@@ -1,0 +1,75 @@
+{
+  "houseData": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "secondName": "Newton",
+      "email": "johnnewton@gmail.com",
+      "country": "Tanzania",
+      "password": "12345",
+      "imgUrl": "./images/img-8.jpg",
+      "label": ".Feel the Nature",
+      "path": "./Services",
+      "description": "Explore the cosy atmosphere at the foot of Ngong Hills."
+    },
+    {
+      "id": 2,
+      "firstName": "Baraza",
+      "secondName": "Okwetu",
+      "email": "barazaokwetu@gmail.com",
+      "country": "Kenya",
+      "password": "abcdefg",
+      "imgUrl": "./images/img-2.jpg",
+      "label": ".Feel the Nature",
+      "path": "./Services",
+      "description": "Get woken up by the cool breeze of the ocean."
+    },
+    {
+      "id": 3,
+      "firstName": "Esther",
+      "secondName": "Hoyt",
+      "email": "estherhoyt@gmail.com",
+      "country": "South Africa",
+      "password": "12345",
+      "imgUrl": "./images/img-9.jpg",
+      "label": ".Feel the Nature",
+      "path": "./About",
+      "description": "Beautiful waterfall scenery."
+    },
+    {
+      "id": 4,
+      "firstName": "Wilkins",
+      "secondName": "Kimori",
+      "email": "wilkinskimori@gmail.com",
+      "country": "Angola",
+      "password": "987654",
+      "imgUrl": "./images/img-6.jpg",
+      "label": ".Feel the Nature",
+      "path": "./About",
+      "description": "Everyday is a picnic."
+    },
+    {
+      "id": 5,
+      "firstName": "Billy",
+      "secondName": "Omollo",
+      "email": "billyomollo@gmail.com",
+      "country": "Tanzania",
+      "password": "12345",
+      "imgUrl": "./images/img-5.jpg",
+      "label": ".Feel the Nature",
+      "path": "./About",
+      "description": "When you want a town setting."
+    },
+    {
+      "firstName": "elijah",
+      "lastName": "elijah",
+      "email": "bundielly@gmail.com",
+      "country": "Åland Islands",
+      "password": "redsgaew",
+      "imageUrl": "./images/img-8.jpg",
+      "label": "ugali",
+      "description": "elijah",
+      "id": 6
+    }
+  ]
+}

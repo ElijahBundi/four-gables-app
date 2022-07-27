@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'
-// import { Button } from './Button';
 
 function Navbar() {
     const [click, setClick] = useState(false)
-    /*const [button, setButton] = useState(true)*/
+    const [button, setButton] = useState(true)
 
     function handleClick() {
         setClick(!click)
@@ -15,7 +14,7 @@ function Navbar() {
         setClick(false)
     }
 
-    /*
+    
     function showButton() {
         if(window.innerWidth <= 960) {
             setButton(false)
@@ -29,14 +28,13 @@ function Navbar() {
     }, [])
 
     window.addEventListener('resize', showButton)
-    */
 
   return (
     <>
         <nav className="navbar" >
             <div className='navbar-container'>
                 <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                    Fo-Gab <i className='fab fa-typo3' />
+                    Fo-Gab <i className='fab fa-accusoft' />
                 </Link>
                 <div className='menu-icon' onClick={handleClick} >
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -68,7 +66,9 @@ function Navbar() {
                         </Link>
                     </li>
                 </ul>
-                {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
+                <Link to='sign-up'>
+                    {button ? <button className='btn--outline'>SIGN UP</button> : null}
+                </Link>
             </div>
         </nav>
     </>
