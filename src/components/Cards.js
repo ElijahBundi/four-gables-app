@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { HomeContext } from './context/homeContext';
 import CardItem from './CardItem';
+
 import './Cards.css'
 
-function Cards({ homes, onDelete }) {
+function Cards() {
 
-    
+    const { homes } = useContext(HomeContext)
 
   return (
     <div className='cards'>
@@ -14,7 +16,7 @@ function Cards({ homes, onDelete }) {
                 <ul className='cards-item'>
                     {homes.map((home) => {
                         return (
-                            <CardItem key={home.id} home={home} onDelete={onDelete}/>
+                            <CardItem key={home.id} home={home} />
                         )
                     })}
                 </ul>                         

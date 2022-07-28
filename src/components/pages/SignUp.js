@@ -1,11 +1,14 @@
-import React, { useState, useMemo } from 'react';
+import React, { useContext, useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
+import { HomeContext } from '../context/homeContext';
 import Select from 'react-select';
 import countryList from 'react-select-country-list';
 import '../../App.css';
 import './SignUp.css'
 
-function SignUp({ onAddHome }) {
+function SignUp() {
+
+  const {addHome} = useContext(HomeContext)
 
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
@@ -40,7 +43,7 @@ function SignUp({ onAddHome }) {
       body: JSON.stringify(dataObj)
     })
       .then(res => res.json())
-      .then((newHome => onAddHome(newHome)))
+      .then((newHome => addHome(newHome)))
   }
 
   return (
@@ -104,11 +107,13 @@ function SignUp({ onAddHome }) {
             value={password} 
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button className='btn'>Sign Up</button>
-          
-          {/* <Link to='/'>
+          <div className='sign-up-homepage-container'>
             <button className='btn'>Sign Up</button>
-          </Link> */}
+            <Link className='homepage-link' to='/'>
+              <p>Go to Homepage</p>
+            </Link>
+          </div>
+          
 
         </form> 
         <div className='login-link-container'>

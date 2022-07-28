@@ -1,21 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { HomeContext } from './context/homeContext';
 import { Link } from 'react-router-dom';
 
-function CardItem({ home, onDelete }) {
+function CardItem({ home }) {
 
-    // function handleClick(e) {
-    //     if (e.type === "click") {
-    //         console.log('Left Click')
-    //     } else if (e.type === "contextmenu") {
-    //         console.log("right Click")
-    //     }
-    // }
+    const { deleteHome } = useContext(HomeContext)
 
     function handleDelete() {
         fetch(`http://localhost:8004/houseData/${home.id}`, {
             method: 'DELETE',
         })
-            onDelete(home.id)
+            deleteHome(home.id)
     }
 
   return (

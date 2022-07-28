@@ -107,12 +107,67 @@
       "firstName": "Elijah",
       "lastName": "Elijah",
       "email": "bundielly@gmail.com",
-      "country": "Albania",
-      "password": "sdfghjkl",
+      "country": "Åland Islands",
+      "password": "SDFGHJ",
       "imgUrl": "./images/img-12.jpg",
-      "label": "superb",
-      "description": "nothing to be added",
+      "label": "elijah",
+      "description": "elijah",
+      "id": 12
+    },
+    {
+      "firstName": "Elijah",
+      "lastName": "Elijah",
+      "email": "bundielly@gmail.com",
+      "country": "Algeria",
+      "password": "ertyuiop[",
+      "imgUrl": "./images/img-15.jpg",
+      "label": "elijah",
+      "description": "Elijah",
       "id": 13
+    },
+    {
+      "firstName": "Elijah",
+      "lastName": "Elijah",
+      "email": "kimsfelo@gmail.com",
+      "country": "Angola",
+      "password": "sdfghjkl;",
+      "imgUrl": "./images/img-19.jpg",
+      "label": "kales",
+      "description": "Elijah",
+      "id": 16
+    },
+    {
+      "firstName": "Elijah",
+      "lastName": "Elijah",
+      "email": "kimsfelo@gmail.com",
+      "country": "Angola",
+      "password": "sdfghjkl;",
+      "imgUrl": "./images/img-19.jpg",
+      "label": "kales",
+      "description": "Elijah",
+      "id": 17
+    },
+    {
+      "firstName": "ugali",
+      "lastName": "Elijah",
+      "email": "kimsfelo@gmail.com",
+      "country": "Algeria",
+      "password": "ertyuiop",
+      "imgUrl": "./images/img-18.jpg",
+      "label": "Elijah",
+      "description": "ugali",
+      "id": 18
+    },
+    {
+      "firstName": "ugali",
+      "lastName": "Elijah",
+      "email": "kimsfelo@gmail.com",
+      "country": "Algeria",
+      "password": "ertyuiop",
+      "imgUrl": "./images/img-18.jpg",
+      "label": "Elijah",
+      "description": "ugali",
+      "id": 19
     }
   ]
 }
