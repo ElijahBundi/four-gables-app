@@ -157,17 +157,6 @@
       "label": "Elijah",
       "description": "ugali",
       "id": 18
-    },
-    {
-      "firstName": "ugali",
-      "lastName": "Elijah",
-      "email": "kimsfelo@gmail.com",
-      "country": "Algeria",
-      "password": "ertyuiop",
-      "imgUrl": "./images/img-18.jpg",
-      "label": "Elijah",
-      "description": "ugali",
-      "id": 19
     }
   ]
 }

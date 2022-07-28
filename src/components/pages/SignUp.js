@@ -110,7 +110,7 @@ function SignUp() {
           <div className='sign-up-homepage-container'>
             <button className='btn'>Sign Up</button>
             <Link className='homepage-link' to='/'>
-              <p>Go to Homepage</p>
+              <p>Back to Homepage</p>
             </Link>
           </div>
           
