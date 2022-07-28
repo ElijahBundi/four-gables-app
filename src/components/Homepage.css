@@ -58,13 +58,8 @@
 }
 
 
-.btn--primary {
-    padding: 8px 20px;
-    font-size: 20px;
-    border-radius: 2px;
-    outline: none;
-    border: none;
-    cursor: pointer;
+.btn--outline:hover {
+    
     background-color: var(--primary);
     color: #242424;
     border: 1px solid var(--primary);
