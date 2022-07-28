@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# Phase 2 React-App: Four-Gables App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Demo
 
-## Available Scripts
+This is a link to the demo video of how the app works. 
 
-In the project directory, you can run:
+![Demo vid](....)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Welcome to Fo-Gab, where dreams come home! We encourage you to search, see, explore, love and let us guide you home. Our layout is extremely user friendly, offering a beautiful interface as the homes we offer. Our mantra being the magnitude of the minute, we showcase simplicity in its most grandiose form. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Join us as we take you through what you expect from us.
 
-### `npm test`
+## Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After unbundling the project:
 
-### `npm run build`
+1. Run `npm install` in your terminal.
+2. Run `npm run server`. This will run your backend on port `8004`.
+3. In a new terminal, run `npm start`. This will run your React app on port `8000`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Make sure to open [http://localhost:8004/houseData](http://localhost:8004/houseData) in the browser to verify that your backend is working before you proceed!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The base URL for your backend is: `http://localhost:8004`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Core Deliverables
 
-### `npm run eject`
+As a user:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. When the app starts, I can see all currently uploaded homes.
+2. I can sign-up and add a new home to the list of homes while sending that data back to the server.
+3. I can delete homes and add homes at will.
+4. I am yet to redirect the user to the more detailed content about the home.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Endpoints for Core Deliverables
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### GET /homes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Example Response:
 
-## Learn More
+```json
+[
+  {
+      "id": 2,
+      "firstName": "Baraza",
+      "secondName": "Okwetu",
+      "email": "barazaokwetu@gmail.com",
+      "country": "Kenya",
+      "password": "abcdefg",
+      "imgUrl": "./images/img-2.jpg",
+      "label": ".Feel the Nature",
+      "path": "./Services",
+      "description": "Get woken up by the cool breeze of the ocean."
+    },
+    {
+      "id": 3,
+      "firstName": "Esther",
+      "secondName": "Hoyt",
+      "email": "estherhoyt@gmail.com",
+      "country": "South Africa",
+      "password": "12345",
+      "imgUrl": "./images/img-9.jpg",
+      "label": ".Feel the Nature",
+      "path": "./About",
+      "description": "Beautiful waterfall scenery."
+    },
+]
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### POST `/homes`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Required Headers:
 
-### Code Splitting
+```js
+{
+  "Content-Type": "application/json"
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Request Object:
 
-### Analyzing the Bundle Size
+```json
+{
+  "firstName": "Billy",
+  "secondName": "Omollo",
+  "email": "billyomollo@gmail.com",
+  "country": "Tanzania",
+  "password": "12345",
+  "imgUrl": "./images/img-5.jpg",
+  "label": ".Feel the Nature",
+  "path": "./About",
+  "description": "When you want a town setting."
+},   
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Example Response:
 
-### Making a Progressive Web App
+```json
+{
+  "id": 4,
+  "firstName": "Billy",
+  "secondName": "Omollo",
+  "email": "billyomollo@gmail.com",
+  "country": "Tanzania",
+  "password": "12345",
+  "imgUrl": "./images/img-5.jpg",
+  "label": ".Feel the Nature",
+  "path": "./About",
+  "description": "When you want a town setting."
+},
+```
+#### DELETE `/homes/:id`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+Using a button, function and the filter method, a home can be deleted and the remaining homes displayed.
 
-### Advanced Configuration
+Example Response:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```json
+{}
+```
 
-### Deployment
+#### Advanced Deliverables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+As a user:
 
-### `npm run build` fails to minify
+1. I can add a home to my favorites and see it on a separate list.
+2. I can click on a home and see it on a separate page with more detailed content.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
