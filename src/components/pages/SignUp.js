@@ -35,7 +35,7 @@ function SignUp() {
       description: description
     }
     
-    fetch('https://powerful-gorge-80946.herokuapp.com/', {
+    fetch('https://powerful-gorge-80946.herokuapp.com/houseData', {
       method: 'POST',
       headers: {
         'Content-Type' : 'application/json'

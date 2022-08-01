@@ -7,7 +7,7 @@ function CardItem({ home }) {
     const { deleteHome } = useContext(HomeContext)
 
     function handleDelete() {
-        fetch(`https://powerful-gorge-80946.herokuapp.com/${home.id}`, {
+        fetch(`https://powerful-gorge-80946.herokuapp.com/houseData/${home.id}`, {
             method: 'DELETE',
         })
             deleteHome(home.id)

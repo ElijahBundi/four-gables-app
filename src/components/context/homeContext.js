@@ -7,7 +7,7 @@ function HomeProvider({ children }) {
   const [homes, setHomes] = useState([])
 
   useEffect(() => {
-    fetch('https://powerful-gorge-80946.herokuapp.com/')
+    fetch('https://powerful-gorge-80946.herokuapp.com/houseData')
     .then(res => res.json())
     .then(homeData => setHomes(homeData))
   }, [])
