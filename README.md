@@ -7,12 +7,12 @@ This is a link to the demo video of how the app works.
 ``
 frontend link
 ``
-![frontend link](https://four-gables-app.herokuapp.com/)
+https://four-gables-app.herokuapp.com/
 
 ``
 backend link
 ``
-![backend link](https://powerful-gorge-80946.herokuapp.com/houseData)
+https://powerful-gorge-80946.herokuapp.com/houseData
 
 ## Introduction
 
