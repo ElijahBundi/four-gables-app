@@ -22,16 +22,6 @@ Join us as we take you through what you expect from us.
 
 ## Setup
 
-After unbundling the project:
-
-1. Run `npm install` in your terminal.
-2. Run `npm run server`. This will run your backend on port `8004`.
-3. In a new terminal, run `npm start`. This will run your React app on port `8000`.
-
-Make sure to open [http://localhost:8004/houseData](http://localhost:8004/houseData) in the browser to verify that your backend is working before you proceed!
-
-The base URL for your backend is: `http://localhost:8004`
-
 ## Core Deliverables
 
 As a user:
